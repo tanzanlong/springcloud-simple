@@ -10,8 +10,8 @@ public class OrderController {
 	    @Autowired
 	    DiscoveryClient discoveryClient;
 
-	    @GetMapping("/dc")
-	    public String dc() {
+	    @GetMapping("/ordercreate")
+	    public String ordercreate() {
 	        String services = "Services: " + discoveryClient.getServices();
 	        System.out.println(services);
 	        return services;
